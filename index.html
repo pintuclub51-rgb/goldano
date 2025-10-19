@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden Fitness Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #111;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff9900, #ff6600);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: black;
+    }
+
+    .hero {
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1571019613914-85f342c47b31?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 50px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-top: 15px;
+      max-width: 600px;
+    }
+
+    .hero button {
+      margin-top: 30px;
+      background: #ff6600;
+      border: none;
+      padding: 15px 30px;
+      color: white;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background: #cc5200;
+    }
+
+    section {
+      padding: 70px 40px;
+      text-align: center;
+    }
+
+    .about, .services, .contact {
+      background: #1a1a1a;
+      margin-top: 20px;
+      border-radius: 10px;
+      padding: 60px 20px;
+    }
+
+    .about h2, .services h2, .contact h2 {
+      color: #ff9900;
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+
+    .services-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .service-box {
+      background: #222;
+      padding: 25px;
+      border-radius: 10px;
+      width: 280px;
+      transition: 0.3s;
+    }
+
+    .service-box:hover {
+      background: #333;
+      transform: translateY(-8px);
+    }
+
+    .service-box h3 {
+      color: #ff9900;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+      color: #999;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .hero h2 {
+        font-size: 36px;
+      }
+      .services-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Golden Fitness Hub</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Transform Your Body & Mind</h2>
+    <p>Join Golden Fitness Hub and start your fitness journey with expert trainers and modern workouts.</p>
+    <button onclick="alert('Thank you for joining Golden Fitness Hub!')">Join Now</button>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>Golden Fitness Hub is a premium gym and wellness center dedicated to helping you achieve your fitness goals through personalized training and a positive environment.</p>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service-box">
+        <h3>Personal Training</h3>
+        <p>Get one-on-one guidance with certified trainers to reach your goals faster.</p>
+      </div>
+      <div class="service-box">
+        <h3>Yoga & Meditation</h3>
+        <p>Balance your body and mind through yoga sessions designed for all levels.</p>
+      </div>
+      <div class="service-box">
+        <h3>Nutrition Plans</h3>
+        <p>Customized diet plans to complement your workout routine and boost results.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 +91 9719408937 | 📧 info@goldenfitnesshub.com</p>
+    <p>📍 Agra Cantt, Uttar Pradesh, India</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Golden Fitness Hub | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
